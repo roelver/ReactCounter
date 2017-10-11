@@ -1,7 +1,7 @@
 {
-  "name": "redux-simple-starter",
+  "name": "react-counter",
   "version": "1.0.0",
-  "description": "Simple starter package for Redux with React and Babel support. This is a fork from StephenGrider's starter with upgraded framework versions and eslint set up.",
+  "description": "Simple counter in React",
   "main": "index.js",
   "repository": "git@github.com:roelver/ReduxSimpleStarter.git",
   "scripts": {
