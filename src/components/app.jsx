@@ -8,12 +8,14 @@ export default class App extends Component {
   }
 
   modifyCounter (diff) {
-    this.setState({ counter: this.state.counter + diff });
+    this.setState((prev) => { 
+      return { counter: prev.counter + diff }
+    });
   }
 
   render () {
     return (
-      <div>
+      <div style={{textAlign: 'center'}}>
         <h1 className="app-root">React Counter: {this.state.counter}</h1>
         <button onClick={() => this.modifyCounter(1)}><b>+</b></button>
         <button onClick={() => this.modifyCounter(-1)}><b>-</b></button>
